@@ -35,7 +35,7 @@ class DB
         // if ran in web-server environment, use environment variables for database configuration
         $dsn = getenv('DB_DSN') ?: 'mysql:dbname=phptest;host=127.0.0.1';
         $user = getenv('DB_USER') ?: 'root';
-        $password = getenv('DB_PASS') ?: 'toor';
+        $password = getenv('DB_PASS') ?: 'pass';
 
         try {
             $this->pdo = new \PDO($dsn, $user, $password);
